@@ -1,0 +1,17 @@
+:%s/\s\+$           @ supprimer automatiquement tous les espaces a la fin de la ligne
+:3 <enter> 			@ ce deplacer a la ligne 3
+5l 					@ ce deplacer de 5 caractere sur la droite
+i <space> <escape> 	@ passer en mode insert et inserer un espace puis quitter le mod
+:17 <enter> 		@ce deplacer a la ligne 17
+5l 					@ ce deplacer de 5 caractere sur la droite
+i <space> <escape> 	@ passer en mode insert et inserer un espace puis quitter le mod
+:5 <enter> 			@ ce deplacer a la ligne 5
+3dd 				@ couper 3 lignes
+:2 <enter> 			@ ce deplacer a la ligne 2
+p 					@ coller a la suite du curseur
+f1 					@ inserer le header
+gg=G 				@ indenter le code
+:13 <enter> 		@ ce deplacer a la ligne 13
+4l 					@ ce deplacer de 5 caractere sur la droite
+i <tab> <escape> 	@passer en mode insert et inserer une tabulation puis quitter le mod
+:wq 				@ quitter en sauvegardant

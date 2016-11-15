@@ -1,0 +1,29 @@
+C-u 4 C-n														#repete la fct 'n' fois (fct descendre)
+C-u 3 C-k														#repete	la fct 'n' fois	(fct couper)
+C-u 2 C-p														#repete	la fct 'n' fois	(fct monter)
+C-y	  															#fct coller
+
+M & f  															#aller a la fin du mot
+space
+
+C-u 11 C-n														#repete	la fct 'n' fois	(fct descendre)
+M & f  															#aller a la fin du mot
+space
+
+M & x set-variable RET c-basic-offset RET 4 RET					#remplace les ' ' par des tab devant		
+M & x set-variable RET tab-width RET 4 RET
+
+C-x & h															#selectionne tout
+M & C-\															#indente tout
+ret
+
+M & f															#aller a la fin	du mot
+M & i															#fait un tab
+
+M & % space(x11) RET RET y										#selectionne les 11 espaces et les supp
+
+C-u 20 C-p		 	 	 										#repete la fct 'n' fois (fct monter)
+M & % TAB(x2) RET TAB RET n y(x4) n y(x2) n y(x3) n y(x2) n y(x5)		#indentation ok
+
+C-x C-s
+C-x C-c
